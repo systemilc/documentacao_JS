@@ -1,0 +1,78 @@
+TIPOS DE DADOS
+•	Number = 1, 2, 3...
+•	String = “Textos como um todo entre aspas”
+Strings pode ser utilizado com aspas dupla “texto” aspas simples ‘texto’ ou com crase (backticks) `texto`
+Outras funcionalidades de Strings
+\ pode dar um escape na string e isso permite efeitos especiais
+Ex.: console.log(“Essa é uma string \n de duas linhas”) = pula uma linha na frase na hora da exibição
+
+Pode-se colocar aspas simples ou duplas dentro de uma string desde que tenha começado com a aspa inversa.
+Ex.: console.log(“teste de ‘aspas’ simples”) | console.log(‘teste de “aspas” dupla)
+
+Template literals serve para computar valores dentro de uma string
+Ex.: console.log(`A soma de 2+2 é ${2+2}`)
+
+Concatenação de strings
+Pode-se juntar Strings utilizando o sinal de +
+Ex. var nome = “Isaac”
+      Var sobrenome = “Costa”
+Console.log(nome+sobrenome)
+
+•	Boolean (comparadores, operadores lógicos (true – False)
+Operadores Lógicos Booleans
+&& (and / e) para ser true, os dois precisam ser verdadeiros
+|| (or / ou) para ser true, basta um ser verdadeiros 
+! (not) inverte o valor true e false
+Tabela verdade
+A	B	A && B	A || B	! A	! B
+false	false	false	false	true	true
+false	true	false	true	true	false
+true	false	false	true	false	true
+true	true	true	true	false	false
+
+Operador ternário (Booleans)
+Console.log(5 < 2 ? ‘ é maior’ : ‘ é menor’) – comparação ternária em uma linha, não é usual. Deve-se ser evitado no código.
+Nesta comparação lê-se da seguinte maneira. (5 é menor que 2? Neste exemplo retorna ‘é menor’ pois não satisfez a comparação antes da ?
+Console.log(false ? 5 : 4) retorna 4 pois é false
+Console.log(“Isaac” == “Isaac” ? “Olá Isaac : “Não é o Isaac”) retorna Olá Isaac pois satisfez a condição de verdadeiro
+
+•	Empty values = Null, undefined
+
+Numbers: Especial Numbers
+Considerados como números, mas não funcionam como números
+Infinity
+-infinity
+NaN (Not a Number) – Quando soma número com string por exemplo
+
+Console.log(typeof 13) = imprime o tipo de dado do número 13
+Pode ser utilizando também em variáveis etc. para informar o tipo de dados que ele é:
+Ex.: var nome = “isaac”
+Console.log(nome.Typeof)  = retorna o tipo string
+
+Operadores
++ SOMA
+- SUBTRAÇÃO
+/ DIVISÃO
+* MULTIPLICAÇÃO
+% RESTO DA DIVISÃO
+
+Comparações
+> Maior que
+< Menor que
+>= Maior ou igual
+<= Menor ou igual
+== Igual
+!= Diferente
+=== Identico (exatamente igual em valor e tipo)
+
+Conversão de tipo automática 
+Console.log( 5 * null) = 0
+Console.log(“5” – 3) = 2
+Console.log(“5” + 1) = 51
+Console.log(“dois” * “três”) = NaN
+Obs.: Estes tipos de operações podem ser perigosos para o código pois apesar de ser a forma incorreta de escrever a operação, o java script não vai retornar erro;
+
+
+Dicionário
+Typeof = Imprime o topo de dados do JS
+Backticks = crase
